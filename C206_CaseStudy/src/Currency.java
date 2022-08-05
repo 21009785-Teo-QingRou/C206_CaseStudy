@@ -9,8 +9,13 @@ public class Currency {
 	public double sell_Rate;
 	
 	// constructor
+	public Currency(String iso_Code, String name, double holdings) {
+		this.iso_Code = iso_Code;
+		this.name = name;
+		this.holdings = holdings;
+	}
+	
 	public Currency(String iso_Code, String name, double holdings, double buy_Rate, double sell_Rate) {
-		super();
 		this.iso_Code = iso_Code;
 		this.name = name;
 		this.holdings = holdings;
