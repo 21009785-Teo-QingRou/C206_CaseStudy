@@ -4,14 +4,16 @@ public class Currency {
 	// field
 	public String iso_Code;
 	public String name;
+	public double holdings;
 	public double buy_Rate;
 	public double sell_Rate;
 	
 	// constructor
-	public Currency(String iso_Code, String name, double buy_Rate, double sell_Rate) {
+	public Currency(String iso_Code, String name, double holdings, double buy_Rate, double sell_Rate) {
 		super();
 		this.iso_Code = iso_Code;
 		this.name = name;
+		this.holdings = holdings;
 		this.buy_Rate = buy_Rate;
 		this.sell_Rate = sell_Rate;
 	}
@@ -31,6 +33,14 @@ public class Currency {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public double getHoldings() {
+		return holdings;
+	}
+
+	public void setHoldings(double holdings) {
+		this.holdings = holdings;
 	}
 
 	public double getBuy_Rate() {
